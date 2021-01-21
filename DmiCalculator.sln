@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmiCalculator", "DmiCalculator\DmiCalculator.csproj", "{C01AB84E-E3D7-4B39-A7AC-DBBBBA2FBFA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalculator", "DmiCalculator\DmiCalculator.csproj", "{C01AB84E-E3D7-4B39-A7AC-DBBBBA2FBFA6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcGTK", "DmiCalcGTK\DmiCalcGTK.csproj", "{7463CC29-F0C5-4A1E-AF2D-CADC8A912271}"
 EndProject
@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcUnitTests", "DmiCalc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcWinForms", "DmiCalcWinForms\DmiCalcWinForms.csproj", "{231105E4-E311-422E-9636-BC3B5C33E918}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcRaspberryPi", "DmiCalcRaspberryPi\DmiCalcRaspberryPi.csproj", "{D08C952A-98DB-4998-BA75-EE3541AE0BB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcReflection", "DmiCalcReflection\DmiCalcReflection.csproj", "{EEB5D387-7B2D-4579-855C-F96CEAEE8161}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcReflectionUnitTests", "DmiCalcReflectionUnitTests\DmiCalcReflectionUnitTests.csproj", "{A92499A8-827C-48F5-825E-B38F8CA9AC30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DmiCalcRaspberryPi", "DmiCalcRaspberryPi\DmiCalcRaspberryPi.csproj", "{388A7E51-CE49-4368-99FF-116803605F96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +39,18 @@ Global
 		{231105E4-E311-422E-9636-BC3B5C33E918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{231105E4-E311-422E-9636-BC3B5C33E918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{231105E4-E311-422E-9636-BC3B5C33E918}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D08C952A-98DB-4998-BA75-EE3541AE0BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D08C952A-98DB-4998-BA75-EE3541AE0BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D08C952A-98DB-4998-BA75-EE3541AE0BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D08C952A-98DB-4998-BA75-EE3541AE0BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB5D387-7B2D-4579-855C-F96CEAEE8161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB5D387-7B2D-4579-855C-F96CEAEE8161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB5D387-7B2D-4579-855C-F96CEAEE8161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB5D387-7B2D-4579-855C-F96CEAEE8161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92499A8-827C-48F5-825E-B38F8CA9AC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92499A8-827C-48F5-825E-B38F8CA9AC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92499A8-827C-48F5-825E-B38F8CA9AC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92499A8-827C-48F5-825E-B38F8CA9AC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388A7E51-CE49-4368-99FF-116803605F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388A7E51-CE49-4368-99FF-116803605F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388A7E51-CE49-4368-99FF-116803605F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388A7E51-CE49-4368-99FF-116803605F96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
