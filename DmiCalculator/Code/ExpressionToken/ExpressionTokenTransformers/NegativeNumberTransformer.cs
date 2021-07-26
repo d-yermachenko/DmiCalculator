@@ -20,7 +20,9 @@ namespace DmiCalc.ExpressionTokens.Transformers {
                     bool isPrePreviousTokenOperatorOrNull = prepreviousToken == null //Meens that in 2 tokens on the left it was the math operation or null
                         || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.BinaryOperatorAddition
                         || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.BinaryOperatorMultiplication
-                        || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.BinaryOperatorRelation;
+                        || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.BinaryOperatorRelation
+                        || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.IntermediateBracketOpen
+                        || prepreviousToken?.ExpressionTokenKind == ExpressionTokenKind.IntermediateBraceOpen;
                     // Checking 1 token on the left - was it minus sign
                     bool isPreviousTokenIsMinusOperator = previosToken?.ExpressionTokenKind == ExpressionTokenKind.BinaryOperatorAddition &&
                         String.Equals(previosToken?.ExpressionTokenValue, "-");

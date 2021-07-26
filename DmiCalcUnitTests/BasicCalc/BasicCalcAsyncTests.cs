@@ -78,5 +78,23 @@ namespace DmiCalcUnitTests.BasicCalc {
         }
 
 
+        [TestMethod]
+        public void AbsExpressionBasic() {
+            BasicCalculator basicCalculator = new BasicCalculator();
+            var result1 = basicCalculator.CalculateExpressionAsync("abs(-5)");
+            result1.Wait();
+            Assert.AreEqual(5, result1.Result);
+        }
+
+        [TestMethod]
+        public void AbsExpressionOfResult() {
+            BasicCalculator basicCalculator = new BasicCalculator();
+            var result1 = basicCalculator.CalculateExpressionAsync("abs(8-4)");
+            result1.Wait();
+            Assert.AreEqual(4, result1.Result);
+        }
+
+
+
     }
 }

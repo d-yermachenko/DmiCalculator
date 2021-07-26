@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using DmiCalculator.Code.BasicCalc.Functions;
+using System.Collections.Generic;
 
 namespace DmiCalc.BasicCalc {
     class BasicFunctionGetter : IOperationsProvider {
@@ -12,7 +13,8 @@ namespace DmiCalc.BasicCalc {
                         new FunctionSubstract(),
                         new FunctionMultiply(),
                         new FunctionDivide(),
-                        new FuncExclamation()
+                        new FuncExclamation(),
+                        new FunctionAbs()
                     };
                 }
                 return _BasicOperations;

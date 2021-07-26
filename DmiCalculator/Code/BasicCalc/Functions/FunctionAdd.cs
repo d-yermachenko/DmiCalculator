@@ -28,11 +28,11 @@ namespace DmiCalc.BasicCalc {
             return a1 + a2;
         }
 
-        public double Add(long a1, long a2) {
+        public long Add(long a1, long a2) {
             return a1 + a2;
         }
 
-        public double Add(int a1, int a2) {
+        public long Add(int a1, int a2) {
             return a1 + a2;
         }
     }
