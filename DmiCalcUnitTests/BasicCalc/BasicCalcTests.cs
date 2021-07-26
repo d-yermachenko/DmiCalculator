@@ -69,6 +69,13 @@ namespace DmiCalcUnitTests.BasicCalc {
             Assert.AreEqual(-80L, result1);
         }
 
+        [TestMethod]
+        public void AbsExpressionOfResult() {
+            BasicCalculator basicCalculator = new BasicCalculator();
+            var result1 = basicCalculator.CalculateExpression("abs(8-4)");
+            Assert.AreEqual(4, result1);
+        }
+
 
     }
 }

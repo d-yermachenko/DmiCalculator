@@ -52,8 +52,16 @@ namespace WindowsFormParserApp {
         }
 
         public async void CalculateAsync(string expression) {
-            var result = await DebugCalculator.CalculateExpressionAsync(expression);
-            MessageBox.Show($"{result?.ToString()} of type {result?.GetType()?.Name}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+            try {
+                var result = await DebugCalculator.CalculateExpressionAsync(expression); MessageBox.Show($"{result?.ToString()} of type {result?.GetType()?.Name}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (DmiCalc.Exceptions.DmiCalcException e) {
+                MessageBox.Show(e.CalcExceptionCode.ToString());
+            }
+            catch(Exception e) {
+                MessageBox.Show(e.Message);
+            }
         }
+
     }
 }

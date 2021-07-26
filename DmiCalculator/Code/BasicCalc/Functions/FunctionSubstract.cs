@@ -33,11 +33,11 @@ namespace DmiCalc.BasicCalc {
             return a1 - a2;
         }
 
-        public double Substract(long a1, long a2) {
+        public long Substract(long a1, long a2) {
             return a1 - a2;
         }
 
-        public double Substract(int a1, int a2) {
+        public long Substract(int a1, int a2) {
             return a1 - a2;
         }
     }

@@ -13,15 +13,9 @@ namespace DmiCalculator.Code.BasicCalc.Functions {
 
         public Func<IDataSource, dynamic[], dynamic> GetCalcMethod() => CalculateAbs;
 
-        private int CalcAbs(int arg) => Math.Abs(arg);
-
-        private decimal CalcAbs(decimal arg) => Math.Abs(arg);
-
-        //private double CalcAbs(double arg) => Math.Abs(arg);
-
         public dynamic CalculateAbs(IDataSource ds, dynamic[] args) {
             if (args?.Length == 1)
-                return CalcAbs(args[0]);
+                return Math.Abs(args[0] as dynamic);
             else
                 throw new InvalidOperationException("Wrong number of arguments: expected 1, got " + args.Length);
         }

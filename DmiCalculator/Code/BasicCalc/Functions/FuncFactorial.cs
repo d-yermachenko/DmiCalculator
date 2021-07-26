@@ -24,26 +24,26 @@ namespace DmiCalc.BasicCalc  {
             return !argument;
         }
 
-        public dynamic CalculatExclamation(long argument) {
+        public long CalculatExclamation(long argument) {
             long res = 1;
-            while (argument != 1) {
-                res *= argument;
-                argument -= 1;
-            }
+                while (argument != 1) {
+                    res *= argument;
+                    argument -= 1;
+                }
             return res;
         }
 
-        public dynamic CalculatExclamation(ulong argument) {
+        public ulong CalculatExclamation(ulong argument) {
             ulong res = 1;
-            while (argument != 1) {
-                res *= argument;
-                argument -= 1;
-            }
+                while (argument != 1) {
+                    res *= argument;
+                    argument -= 1;
+                }
             return res;
         }
 
 
-        public dynamic CalculatExclamation(int argument) {
+        public long CalculatExclamation(int argument) {
             long res = 1;
             while (argument != 1) {
                 res *= argument;
@@ -52,7 +52,7 @@ namespace DmiCalc.BasicCalc  {
             return res;
         }
 
-        public dynamic CalculatExclamation(uint argument) {
+        public ulong CalculatExclamation(uint argument) {
             ulong res = 1;
             while (argument != 1) {
                 res *= argument;
@@ -71,7 +71,7 @@ namespace DmiCalc.BasicCalc  {
             return res;
         }
 
-        public dynamic CalculatExclamation(float argument) {
+        public double CalculatExclamation(float argument) {
             float res = 1;
             while (argument != 1) {
                 res *= argument;
@@ -80,7 +80,7 @@ namespace DmiCalc.BasicCalc  {
             return res;
         }
 
-        public dynamic CalculatExclamation(decimal argument) {
+        public decimal CalculatExclamation(decimal argument) {
             decimal res = 1;
             while (argument != 1) {
                 res *= argument;
